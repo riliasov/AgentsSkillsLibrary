@@ -127,10 +127,10 @@ describe('[E2E] User Registration Flow', () => {
 {
   "coverageThreshold": {
     "global": {
-      "branches": 80,
-      "functions": 80,
-      "lines": 80,
-      "statements": 80
+      "branches": 90,
+      "functions": 90,
+      "lines": 90,
+      "statements": 90
     },
     "src/core/": {
       "branches": 95,
@@ -145,11 +145,11 @@ describe('[E2E] User Registration Flow', () => {
 {
   "coverageThreshold": {
     "global": {
-      "lines": 50,
-      "functions": 50
+      "lines": 60,
+      "functions": 60
     },
     "src/core/": {
-      "lines": 70
+      "lines": 80
     }
   }
 }
@@ -161,8 +161,8 @@ describe('[E2E] User Registration Flow', () => {
 {
   "coverageThreshold": {
     "global": {
-      "lines": 60,
-      "functions": 60
+      "lines": 75,
+      "functions": 75
     }
   }
 }
