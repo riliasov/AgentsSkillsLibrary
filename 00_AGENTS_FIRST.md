@@ -19,5 +19,22 @@ Welcome! If you are reading this, the **Global Skills Library** is active in thi
 - **Clean Code**: Propose refactoring based on `agent-refactorer.md` if tech debt is spotted.
 - **DB Expertise**: Consult `skill-postgresql.md` for any database-related work.
 
+## 🎯 Выбор режима работы (Decision Tree)
+
+| Сценарий | Режим | Обоснование |
+|----------|-------|-------------|
+| Новая фича (≥ 3 файлов) | `command-architect` | Дизайн сначала, код потом |
+| Новая архитектура | `command-architect` + `skill-architecture-patterns` | Требуется анализ trade-offs |
+| Багфикс (1-2 файла) | `command-rapid` | Быстрое решение, минимум накладных расходов |
+| Рефакторинг | `command-architect` + `agent-refactorer` | Планирование изменений, затем рефакторинг |
+| Security аудит | `agent-security-auditor` | Специализированная роль |
+| Написание тестов | `agent-test-architect` | Дизайн тестовой стратегии |
+| Code review | `agent-code-reviewer` + `command-review` | Систематический анализ |
+| Документация | `command-rapid` + `agent-docs-writer` | Быстрая генерация, минимум церемоний |
+| Dashboard/Аналитика | `command-dashboard-rapid` | Специализированный workflow |
+| Отладка сложных багов | `agent-debugger` | Систематический root cause анализ |
+
+**По умолчанию:** Если не уверен — используй `command-architect` для безопасности.
+
 ## 🔄 Library Updates
 This repository (`~/Developer/AgentsSkillsLibrary`) is the "source of truth". Changes here propagate to all projects using the symlink.

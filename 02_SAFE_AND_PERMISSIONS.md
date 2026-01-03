@@ -12,6 +12,9 @@ This document consolidates all safety mechanisms, file protection rules, and ope
 ### 🚫 Blocked Files (Never Edit Automatically)
 These files are protected to prevent system failure or data loss. Modification requires explicit user request:
 - **Lock Files**: `package-lock.json`, `yarn.lock`, `pnpm-lock.yaml`, `Gemfile.lock`, `poetry.lock`, `Cargo.lock`
+  - ⚠️ **Never edit manually** (causes inconsistency)
+  - ✅ **Automatic regeneration allowed** via package managers: `npm install`, `yarn install`, `pip install`, etc.
+  - ✅ **Changes via dependency updates allowed**: Adding/updating packages through proper package manager commands
 - **Sensitive Configs**: `.env`, `.env.local`, `.env.production`
 - **Protected Directories**: `**/secrets/*`, `**/credentials/*`
 - **Git Internals**: `.git/*`
