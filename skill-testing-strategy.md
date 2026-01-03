@@ -120,7 +120,9 @@ describe('[E2E] User Registration Flow', () => {
 - ❌ Third-party library internals
 - ❌ Simple getters/setters
 
-### Coverage Thresholds
+### Coverage Thresholds by Project Type
+
+#### Production / Core Libraries
 ```json
 {
   "coverageThreshold": {
@@ -137,6 +139,35 @@ describe('[E2E] User Registration Flow', () => {
   }
 }
 ```
+
+#### MVP / Prototypes (Rapid Mode)
+```json
+{
+  "coverageThreshold": {
+    "global": {
+      "lines": 50,
+      "functions": 50
+    },
+    "src/core/": {
+      "lines": 70
+    }
+  }
+}
+```
+**Focus:** Только критичные пути, smoke tests, E2E для ключевых flows.
+
+#### Internal Tools / Dashboards
+```json
+{
+  "coverageThreshold": {
+    "global": {
+      "lines": 60,
+      "functions": 60
+    }
+  }
+}
+```
+**Focus:** Business logic тесты, игнорировать UI компоненты.
 
 ## Test Data Management
 
