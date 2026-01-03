@@ -39,5 +39,3 @@ Welcome! If you are reading this, the **Global Skills Library** is active in thi
 ## 🔄 Library Updates
 This repository (`~/Developer/AgentsSkillsLibrary`) is the "source of truth". Changes here propagate to all projects using the symlink.
 
-**Current version:** 1.0.1 (see [CHANGELOG.md](file:///Users/rambook/Developer/AgentsSkillsLibrary/CHANGELOG.md) for breaking changes)
-
