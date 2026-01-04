@@ -38,5 +38,5 @@ Welcome! If you are reading this, the **Global Skills Library** is active in thi
 
 ## 🔄 Library Updates
 This repository (`~/Developer/AgentsSkillsLibrary`) is the "source of truth". To use it in projects, link the inner folder:
-`ln -s ~/Developer/AgentsSkillsLibrary/Agents-skills .AgentsSkillsLibrary`
+`mkdir -p .agent && ln -s ~/Developer/AgentsSkillsLibrary/Agent_skills .agent/skills`
 
