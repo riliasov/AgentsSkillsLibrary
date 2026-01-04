@@ -54,7 +54,7 @@ description: [краткое название, например "deploy the appl
 
 Перед выполнением команды с `// turbo`, агент **ОБЯЗАН**:
 
-1. **Проверить команду** против списка из [02_SAFE_AND_PERMISSIONS.md](file:///Users/rambook/Developer/AgentsSkillsLibrary/02_SAFE_AND_PERMISSIONS.md)
+1. **Проверить команду** против списка из [02_SAFE_AND_PERMISSIONS.md](./02_SAFE_AND_PERMISSIONS.md)
 2. **Если команда в списке "Dangerous Commands" (Section 2):**
    - ❌ **ИГНОРИРОВАТЬ** `// turbo` аннотацию
    - ⚠️ Запросить явное подтверждение пользователя
